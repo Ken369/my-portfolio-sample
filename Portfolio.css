@@ -2,6 +2,10 @@
     font: 'Bebas Neue', cursive
 }
 
+. navbar-default {
+Background: transparent;
+} 
+
 .navbar a{
     font-family: Verdana !important;
 }

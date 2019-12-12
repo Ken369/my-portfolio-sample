@@ -35,7 +35,35 @@
 <body>
         <div id="storytime"></div>
     <!--Navbar-->
-   https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="Portfolio.html">Ken Power</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./Portfolio.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/ken.again/">Instagram</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
             
                 <button href="" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="window.location.href='https://www.youtube.com/channel/UCQV3fp6GAjGd_VklPkiwP7g'">Subscribe</button>
             
@@ -43,16 +71,10 @@
     </nav>
     <!--Container-->
     <div class="container">
-            <!-- Content here -->
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="socialStory.launch();">Highlighted Works</button>
           </div>
           
-
-    
-    <br>
-    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="socialStory.launch();">Highlighted Works</button>
-    <br>
-     <br>
-        <div class="jumbotron">
+    <div class="jumbotron">
         <h1 class="display-4" class="Bebasfont">Website build in progress</h1>
         <p class="lead">Enjoy life :)</p>
         <hr class="my-4">
@@ -60,6 +82,11 @@
         <a class="btn btn-primary btn-lg" href="#" role="button" onclick="visitPage();">Learn more</a>
     </div>
     
+    
+    <button type="button" onclick="socialStory.launch();">Launch Social Story</button>
+
+    
+
     <script>
       var myPlaylist = [
       {

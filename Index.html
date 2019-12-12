@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="https://fondosdepantallaymuchomas.files.wordpress.com/2011/02/k1.png" />
     <!--InstaStory-->
     <link rel="stylesheet" href="socialstory/socialstory.css">
-<script type="text/javascript" src="socialstory/socialstory.js"></script>
+    <script type="text/javascript" src="socialstory/socialstory.js"></script>
     <title>Power</title>
 
 </head>
@@ -81,11 +81,39 @@
         <a class="btn btn-primary btn-lg" href="#" role="button" onclick="visitPage();">Learn more</a>
     </div>
     
-    <script>
-  alert("Hello! I am an alert box!!");
-</script>
     
-<div id="storytime"></div>
+    <button type="button" onclick="socialStory.launch();">Launch Social Story</button>
+
+      <div id="storytime"></div>
+
+      <script>
+		var myPlaylist = [
+		{
+			"title": "Social Story",
+			"date": "2 hours ago",
+			"url": "media/IMG_4627.mov",
+			"icon": "media/small-icon.jpg"
+		},
+		{
+			"title": "Social Story",
+			"date": "1 day ago",
+			"url": "media/IMG_4628.mov",
+			"icon": "media/small-icon.jpg"
+		},
+		{
+			"title": "Social Story",
+			"date": "1 day ago",
+			"url": "media/IMG_4629.mov",
+			"icon": "media/small-icon.jpg"
+		}
+		];
+
+		var socialStory = new Story({
+			playlist: myPlaylist
+		});
+
+	  </script>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -96,6 +124,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

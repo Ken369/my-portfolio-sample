@@ -33,6 +33,7 @@
 </head>
 
 <body>
+        <div id="storytime"></div>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -84,35 +85,24 @@
     
     <button type="button" onclick="socialStory.launch();">Launch Social Story</button>
 
-      <div id="storytime"></div>
+    
 
-      <script>
-		var myPlaylist = [
-		{
-			"title": "Social Story",
-			"date": "2 hours ago",
-			"url": "Barra 1.jpg",
-			"icon": "media/small-icon.jpg"
-		},
-		{
-			"title": "Social Story",
-			"date": "1 day ago",
-			"url": "Barra 2.jpg",
-			"icon": "media/small-icon.jpg"
-		},
-		{
-			"title": "Social Story",
-			"date": "1 day ago",
-			"url": "Barra 3.jpg",
-			"icon": "media/small-icon.jpg"
-		}
-		];
+    <script>
+      var myPlaylist = [
+      {
+          "title": "@ken.again",
+          "date": " follow me!",
+          "url": "media/Barra_5.mp4",
+          "icon": "media/small-icon.jpg"
+      },
 
-		var socialStory = new Story({
-			playlist: myPlaylist
-		});
+      ];
 
-	  </script>
+      var socialStory = new Story({
+          playlist: myPlaylist
+      });
+
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -2,6 +2,10 @@
     font: 'Bebas Neue', cursive
 }
 
+.bg-light{
+  opacity: 0.5;
+}
+
 .navbar-default {
 Background: transparent;
 } 

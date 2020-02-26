@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var comp = ("r", "s", "p")
+    var score = 0
+
+    var num = comp[Math.floor(Math.random()*comp.length)];
+    console.log(comp)
+    
+    var player = prompt("r,s or p?")
+        if (comp === "r" && player === "s") {
+        alert("you lose");  
+        }
+        else if (comp === "r" && player === "p") {
+        alert("you win");
+        }
+        else if (comp === "r" && player === "r") {
+        alert("TIE");
+        }
+        else if (comp === "s" && player === "s") {
+        alert("TIE");
+        }
+        else if (comp === "s" && player === "p") {
+        alert("you win");
+        }
+        else if (comp === "s" && player === "r") {
+        alert("i am the loser here");
+        }
+        else if (comp === "p" && player === "s") {
+        alert("i have won this round")
+        }
+        else if (comp === "p" && player === "p") {
+            alert("TIE")
+        }
+        
+        
+
+        
+
+      
+
+
+
+        
+
+
+       
+
+    
+
+
+
+    
+
+
+    </script>
+  </body>
+</html>

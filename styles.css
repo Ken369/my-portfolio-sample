@@ -51,6 +51,9 @@
     margin: 0;
     display: inline-block;
 }
+#potato{
+    background-color: cornflowerblue;
+}
 
 #home-heading h1 span{
     color: f4c613;
@@ -58,6 +61,7 @@
 
 #home-heading-2{
     color: white;
+    pointer-events:none;
 }
 #home-heading-2 span{
     color: blue;

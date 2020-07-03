@@ -22,10 +22,16 @@
 </head>
 
 <body class="body">
-
+<!--
   <audio autoplay>
     <source src="/Assets/Audio/heyjoe.mp3" type="audio/mpeg">
   </audio>
+-->
+  <audio id="background_audio" autoplay="autoplay" style="z-index: 0">
+    <source src="/Assets/Audio/heyjoe.mp3" />
+  </audio> 
+  
+  <a href="#noscroll" id="mute" style="z-index: 0">toggle sound</a>
 
   <h1 class="Title" style="
     margin-bottom: 0px;"><img src="./Assets/Images/power.png" width="200px" alt="website logo, main logo, design, ui"></h1>
@@ -36,7 +42,7 @@
     <video src="/Assets/Videos/green.mp4" id="home-bg-video" autoplay loop></video>
   </section>
 
-  <div id="home-overlay" style="z-index: 0">
+  <div id="home-overlay" style="z-index: 0; pointer-events:none;">
     <div class="container" >
       <div id="home-content">
         <div id="home-content-inner" class="text-left">
@@ -63,7 +69,7 @@
 
 
 
-  <div class="container">
+  <div class="container" id="potato">
     <div class="row">
 
       <div class="col-md-1">
@@ -106,7 +112,15 @@
 
   
 
-
+  <script>
+    var audio = document.getElementById('background_audio');
+    
+      document.getElementById('mute').addEventListener('click', function (e)
+      {
+          e = e || window.event;
+          audio.muted = !audio.muted;
+          e.preventDefault();
+      }, false);</script>
   <!--   <footer class="footer">
     <a href="https://www.linkedin.com/in/kenneth-power-a52405175/">
     <i class="fab fa-linkedin fa-lg"></i></a>

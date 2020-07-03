@@ -22,30 +22,46 @@
 </head>
 
 <body class="body">
+
+  <audio autoplay>
+    <source src="/Assets/Audio/heyjoe.mp3" type="audio/mpeg">
+  </audio>
+
   <h1 class="Title" style="
     margin-bottom: 0px;"><img src="./Assets/Images/power.png" width="200px" alt="website logo, main logo, design, ui"></h1>
 
-  <nav class="navbar navbar-dark bg-transparent">
-    <a class="navbar-brand" id=title>
-      <img src="./Assets/Images/power.png" width="150px" class="navimg" alt="website logo, main logo, design, ui">
-    </a>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="./index.html">About</a>
-      </li>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="./contact.html">Contact</a>
-        </li>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="./portfolio.html">Portfolio</a>
-          </li>
-  </nav>
-
+  
+  <!--Video Section-->
   <section id="home"> 
     <video src="/Assets/Videos/green.mp4" id="home-bg-video" autoplay loop></video>
   </section>
+
+  <div id="home-overlay" style="z-index: 0">
+    <div class="container" >
+      <div id="home-content">
+        <div id="home-content-inner" class="text-left">
+          <div id="home-heading">
+            <h1 id="home-heading-1" >Ken <span>Power</span></h1>
+            <div id="home-text" >
+              <p>Full Stack Web Developer with core strengths in the Front End. Business oriented approach to systems and planning; with a Commerce & Sales background. My passion is in user-experience & problem solving.
+                
+              </p>
+            </div>
+            <h1 id="home-heading-2" href="./portfolio.html"><span>#</span>Portfolio</h1>
+            <h1 id="home-heading-2" href=""><span>#</span>Blog</h1>
+            <h1 id="home-heading-2" href=""><span>#</span>About</h1>
+
+              
+          </div>
+          <div id="home-btn">
+            <a href="" class="btn btn-general" role="button">Read Today</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="container">
     <div class="row">
@@ -91,7 +107,7 @@
   
 
 
-  <footer class="footer">
+  <!--   <footer class="footer">
     <a href="https://www.linkedin.com/in/kenneth-power-a52405175/">
     <i class="fab fa-linkedin fa-lg"></i></a>
     <a href="https://www.instagram.com/ken.again" class="href">
@@ -101,7 +117,8 @@
     <a href="https://www.youtube.com/channel/UCQV3fp6GAjGd_VklPkiwP7g" class="href">
     <i class="fab fa-youtube fa-lg"></i></a>
     <p>Copyright Ken Power 2020</p>
-  </footer>
+  </footer> -->
+
 </body>
 
 

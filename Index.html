@@ -5,24 +5,10 @@
     <title>Ken Power - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./Assets/Images/fleur.png" />
-    <!-- Compressed CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
-      crossorigin="anonymous"
-    />
-
-    <!-- Compressed JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
-    />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
   </head>
 
   <body class="body">
@@ -30,88 +16,72 @@
     <audio id="background_audio" autoplay="autoplay" style="z-index: 0;">
       <source src="/Assets/Audio/heyjoe.mp3" />
     </audio>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" style="font-family: 'Segoe UI'; font-weight: 900;font-size: 36px;">Ken Power</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a href="https://github.com/Ken369"><i class="fab fa-github fa-2x" style="padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/in/kenneth-power-a52405175/"><i class="fab fa-linkedin fa-2x" style="padding-right: 10px;"></i></a>
+          <a href="https://www.instagram.com/ken.again/"><i class="fab fa-instagram fa-2x" style="padding-right: 10px;"></i></a>
+          <i class=""></i>
+          <i class=""></i>
+          <i class=""></i>
+        </span>
+      </div>
+    </nav>
+
+    <!--Container-->
+      <div class="row">
+        <div class="col-sm-4" style="padding: 30px">
+          <p>Full Stack Web Developer with core strengths in the Front End. Business oriented approach to systems and planning with a Commerce & Sales background. My passion is in user-experience & problem solving.</p>
+          <p>Recently have attended multiple coding bootcamps around the world to understand different approaches to the global design of applications. Focusing on Mobile First approach and presentation. I have an eye for great design, flow, form and function. Enjoy leading projects with clear communication channels; I ensure everyone has an equal say and provide results when bringing real world solutions to reality.</p>
+        </div>
+        <div class="col-sm-8">
+            <video
+              src="/Assets/Videos/green.mp4"
+              preload="auto"
+              autoplay
+              loop
+              width="100%"
+              style="object-fit: contain;"
+              controls
+            ></video>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col" style="background-color: red;">Coding</div>
+          <div class="col" style="background-color: green;">Graphic Design</div>
+          <div class="w-100"></div>
+          <div class="col" style="background-color: blue;">Drawing</div>
+          <div class="col" style="background-color: yellow;">Engraving</div>
+        </div>
+      </div>
+
 
     
 
-    <div class="top-bar" style="background-color: white;">
-      <h1 id="title" style="background-color: white;">Ken<span> Power</span></h1>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text" style="background-color: white;"></li>
-          <li><a href="#" style="background-color: white;">Portfolio</a></li>
-          <li><a href="#" style="background-color: white;">Get in touch</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid-x">
-      <div class="cell medium-4" style="padding: 15px;">
-        <p>
-          Full Stack Web Developer with core strengths in the Front End.
-          Business oriented approach to systems and planning with a Commerce &
-          Sales background. My passion is in user-experience & problem solving.
-        </p>
-        <p>
-          Recently have attended multiple coding bootcamps around the world to
-          understand different approaches to the global design of applications.
-          Focusing on Mobile First approach and presentation. I have an eye for
-          great design, flow, form and function. Enjoy leading projects with
-          clear communication channels; I ensure everyone has an equal say and
-          provide results when bringing real world solutions to reality.
-        </p>
-      </div>
-
-      <div class="cell medium-8">
-        <video
-          src="/Assets/Videos/green.mp4"
-          preload="auto"
-          autoplay
-          loop
-          width="100%"
-          style="object-fit: contain;"
-          controls
-        ></video>
-      </div>
-    </div>
-
-    <div id="services" class="grid-x" style="margin-top: 30px;">
-      <div class="cell small-2"></div>
-      <div class="cell small-2">
-        <i class="fas fa-code" style="padding: 10;" href="">
-          <span> Coding</span></i></div>
-      <div class="cell small-2">
-        <i class="fas fa-desktop" style="padding: 10;">
-          <span> Graphic</span> </i></div>
-      <div class="cell small-2">
-        <i class="fas fa-pencil-alt" style="padding: 10;">
-          <span> Drawing</span> </i></div>
-      <div class="cell small-2">
-        <i class="fas fa-hammer" style="padding: 10;">
-          <span> Engraving</span></i></div>
-      <div class="cell small-2"></div>
-    </div>
-
-    <!--Footer-->
-    <footer class="footer">
-      <a href="https://www.linkedin.com/in/kenneth-power-a52405175/">
-        <i class="fab fa-linkedin fa-lg"></i
-      ></a>
-      <a href="https://www.instagram.com/ken.again" class="href">
-        <i class="fab fa-instagram fa-lg"></i
-      ></a>
-      <a href="https://github.com/Ken369" class="href">
-        <i class="fab fa-github fa-lg"></i
-      ></a>
-      <a
-        href="https://www.youtube.com/channel/UCQV3fp6GAjGd_VklPkiwP7g"
-        class="href"
-      >
-        <i class="fab fa-youtube fa-lg"></i
-      ></a>
-      <p>Copyright Ken Power 2020</p>
-    </footer>
+    
   </body>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script>
     var audio = document.getElementById("background_audio");
     document.getElementById("mute").addEventListener(
@@ -123,5 +93,7 @@
       },
       false
     );
+    <!-- JS, Popper.js, and jQuery -->
+
   </script>
 </html>

@@ -18,3 +18,20 @@ i span{
 div .top-bar{
     background-color: white;
 }
+
+
+    
+
+#bluegrad{
+	background: linear-gradient(to right, #090979 0%, #0097ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font: {
+		size: 20vw;
+		family: $font;
+	};
+}
+
+.fab:hover{
+    color: #0097ff;
+}

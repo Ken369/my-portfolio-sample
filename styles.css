@@ -19,7 +19,17 @@ div .top-bar{
     background-color: white;
 }
 
-
+.gradientcard{
+    margin: 20;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #0097ff;
+    background: linear-gradient(to right, #090979 0%, #0097ff 100%);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
     
 
 #bluegrad{

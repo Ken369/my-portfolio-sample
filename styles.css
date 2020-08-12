@@ -30,7 +30,22 @@ div .top-bar{
     color: white;
     font-size: 20px;
 }
-    
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.egypt{
+    margin: 20;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: red;
+    border-radius: 15px;
+    text-align: center;
+}
+
 
 #bluegrad{
 	background: linear-gradient(to right, #090979 0%, #0097ff 100%);

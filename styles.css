@@ -45,3 +45,15 @@ div .top-bar{
 .fab:hover{
     color: #0097ff;
 }
+
+.col-sm, .contactform{
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+.col-sm, .contactform, input{
+    border: 0;
+}
+
+input, .email, .name{
+    text-decoration: underline;
+}

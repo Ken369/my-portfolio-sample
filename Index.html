@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
   </head>
 
   <body class="body">
@@ -90,7 +92,30 @@
       </div>
 
 
-    
+    <container>
+      Contact Form
+    <form action="https://formspree.io/kpowerperth@gmail.com"
+    method="POST">
+        <label>
+            Email
+            <input type="email" name="Email Address" class="email"/>
+        </label>
+        <label>
+            Subject
+            <input type="text" name="Subject" class="subject"/>
+        </label>
+        <label>
+            Message
+            <textarea name="message" class="message"></textarea>
+        </label>
+        <div class="status">
+
+        </div>
+        <button type="submit" class="submit">
+            Send
+        </button>
+    </form>
+    </container>
 
     
   </body>

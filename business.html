@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken Power - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./Assets/Images/fleur.png" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./contactform.js"></script>
+  </head>
+
+  <body class="body">
+    <!--Hey Joe Audio-->
+    <audio id="background_audio" autoplay="autoplay" style="z-index: 0;">
+      <source src="/Assets/Audio/heyjoe.mp3" />
+    </audio>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="font-family: 'Segoe UI'; font-weight: 900;font-size: 36px;">KEN<span id="bluegrad"> POWER</span> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="./Assets/Images/fleur.jpg" width="33px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./Index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a href="https://github.com/Ken369"><i class="fab fa-github fa-2x" style="padding-right: 10px;"></i></a>
+          <a href="https://www.linkedin.com/in/kenneth-power-a52405175/"><i class="fab fa-linkedin fa-2x" style="padding-right: 10px;"></i></a>
+          <a href="https://www.instagram.com/ken.again/"><i class="fab fa-instagram fa-2x" style="padding-right: 10px;"></i></a>
+          <i class=""></i>
+          <i class=""></i>
+          <i class=""></i>
+        </span>
+      </div>
+    </nav>
+
+    <div class="card" > Vinyl Cutting
+      <img src="./Assets/Images/Logo-01.png" width="200px" href="uploadvinyl.com">
+    </div>
+    <div class="container" style="margin-top: 100px;margin-bottom: 50px;">
+      <div class="row">
+        <div class="col-sm">
+         <h3>Id love to connect with you</h3>
+        </div>
+        <div class="col-sm contactform">
+          <container>
+            <form action="https://formspree.io/kpowerperth@gmail.com"
+            method="POST">
+                <label>
+                  Hi, my name is
+                  <input type="text" name="Name" class="name" placeholder="Your name"/>
+              </label>
+              <label>
+                I can be reached here at
+                <input type="email" name="Email Address" class="email" placeholder="Your email"/>
+            </label>
+          
+              
+                <label>
+                  I would love to know more about:
+                  <textarea style="
+                  display: block;width: 300px;border: 0;" name="message" class="message" placeholder="Tell me how I can help"></textarea>
+              </label>
+            <div class="status">
+                </div>
+                <button type="submit" class="submit" style="background-color: black; color: white ;">
+                Submit
+                </button>
+            </form>
+            </container>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    var audio = document.getElementById("background_audio");
+    document.getElementById("mute").addEventListener(
+      "click",
+      function (e) {
+        e = e || window.event;
+        audio.muted = !audio.muted;
+        e.preventDefault();
+      },
+      false
+    );
+    <!-- JS, Popper.js, and jQuery -->
+
+  </script>
+</html>
